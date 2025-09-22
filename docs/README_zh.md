@@ -49,6 +49,14 @@ docker run -d --name betterforward \
     pplulee/betterforward:latest
 ```
 
+### docker-compose
+1. 复制一份 docker-compose-exapmle.yml 为 docker-compose.yml
+2. 填写参数，填写容器存储映射路径
+3. 终端执行下面的命令
+```
+docker-compose up -d
+```
+
 ## 自定义 API
 
 如果需要使用自定义 API，可以设置环境变量 `TG_API`。留空或不设置将使用默认 API。
