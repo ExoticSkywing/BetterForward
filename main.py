@@ -842,8 +842,7 @@ class TGBot:
             self.menu(message)
         else:
             if (response := self.get_setting('default_message')) is None:
-                self.bot.send_message(message.chat.id, _("叮咚！我来啦～要是你有疑问、想合作，或者有投稿想法，随时喊我就对啦！我回复超及时的，绝对不让你等太久") + "\n\n" +
-                                      "Powered by [浪漫宇宙](https://t.me/nebuluxe)" + " | 访问[官网](https://lmyz.1yo.cc)",
+                self.bot.send_message(message.chat.id, _("马上回复你") + "\n\n",
                                       parse_mode="Markdown",
                                       disable_web_page_preview=True)
             else:
